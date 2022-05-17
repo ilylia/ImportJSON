@@ -473,7 +473,8 @@ function includeXPath_(query, path, options) {
  * Returns true if the rule applies to the given path. 
  */
 function applyXPathRule_(rule, path, options) {
-  return path.indexOf(rule) == 0; 
+  // return path.indexOf(rule) == 0; 
+  return path == rule;
 }
 
 /** 
